@@ -121,18 +121,36 @@
       </section>
       <section class="mt-5">
         <h1 id="card" class="display-5">Card</h1>
-        <div class="row row-cols-1 row-cols-md-2">
-          <p class="col">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula elit interdum sem laoreet vehicula.
-            Duis convallis ultrices augue quis elementum. Etiam a nibh porttitor, luctus velit in, tempor risus. Nam
-            porta purus posuere quam tempus laoreet. Pellentesque ultricies dui neque, ac congue tellus luctus
-            fermentum. Donec tempus est a eros sodales semper. Curabitur vel porta nisl. Aliquam sed pretium metus.
-            Vivamus volutpat magna non nunc placerat, sit amet euismod orci volutpat. Aenean sagittis, purus in
-            scelerisque congue, libero leo ullamcorper velit, rhoncus cursus risus velit vestibulum quam. Donec ut
-            condimentum leo. Donec sed accumsan enim, sit amet iaculis purus. Duis ultrices libero a risus bibendum
-            semper. Praesent congue ante lorem, at lacinia ipsum venenatis eget. Aenean vel ex magna. Donec suscipit
-            varius auctor.
-          </p>
+        <div class="row row-cols-1">
+          <div class="col">
+            <div class="container-fluid py-3 border">
+              <ul class="list-group list-group-horizontal" style="overflow-x: scroll;">
+                <li class="list-group-item border-0">
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                      <a class="card-link" href="#" onclick="return false;">Card link</a>
+                      <a class="card-link" href="#" onclick="return false;">Another link</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <pre><code class="language-html">
+&lt;div class=&quot;card&quot; style=&quot;width: 18rem;&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;h6 class=&quot;card-subtitle mb-2 text-muted&quot;&gt;Card subtitle&lt;/h6&gt;
+    &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Card link&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Another link&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+          </div>
           <p class="col">
             Vestibulum vitae enim ultricies eros rutrum tincidunt. Sed non sem finibus, elementum libero nec, semper
             nisi. Proin cursus viverra sem id bibendum. Nulla rhoncus pretium elit et malesuada. Curabitur fringilla
@@ -144,18 +162,90 @@
       </section>
       <section class="mt-5">
         <h1 id="navbar" class="display-5">Navbar</h1>
-        <div class="row row-cols-1 row-cols-md-2">
-          <p class="col">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula elit interdum sem laoreet vehicula.
-            Duis convallis ultrices augue quis elementum. Etiam a nibh porttitor, luctus velit in, tempor risus. Nam
-            porta purus posuere quam tempus laoreet. Pellentesque ultricies dui neque, ac congue tellus luctus
-            fermentum. Donec tempus est a eros sodales semper. Curabitur vel porta nisl. Aliquam sed pretium metus.
-            Vivamus volutpat magna non nunc placerat, sit amet euismod orci volutpat. Aenean sagittis, purus in
-            scelerisque congue, libero leo ullamcorper velit, rhoncus cursus risus velit vestibulum quam. Donec ut
-            condimentum leo. Donec sed accumsan enim, sit amet iaculis purus. Duis ultrices libero a risus bibendum
-            semper. Praesent congue ante lorem, at lacinia ipsum venenatis eget. Aenean vel ex magna. Donec suscipit
-            varius auctor.
-          </p>
+        <div class="row row-cols-1">
+          <div class="col">
+            <div class="container-fluid py-3 border">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#" onclick="return false;">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" onclick="return false;">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="return false;">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#" onclick="return false;">Action</a></li>
+                          <li><a class="dropdown-item" href="#" onclick="return false;">Another action</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#" onclick="return false;">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit" onclick="return false;">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <pre><code class="language-html">
+&lt;nav class=&quot;navbar navbar-expand-lg navbar-light bg-light&quot;&gt;
+&lt;div class=&quot;container-fluid&quot;&gt;
+  &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;
+  &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarSupportedContent&quot; aria-controls=&quot;navbarSupportedContent&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+    &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarSupportedContent&quot;&gt;
+    &lt;ul class=&quot;navbar-nav me-auto mb-2 mb-lg-0&quot;&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; aria-current=&quot;page&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item dropdown&quot;&gt;
+        &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;navbarDropdown&quot; role=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+          Dropdown
+        &lt;/a&gt;
+        &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDropdown&quot;&gt;
+          &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link disabled&quot;&gt;Disabled&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;form class=&quot;d-flex&quot;&gt;
+      &lt;input class=&quot;form-control me-2&quot; type=&quot;search&quot; placeholder=&quot;Search&quot; aria-label=&quot;Search&quot;&gt;
+      &lt;button class=&quot;btn btn-outline-success&quot; type=&quot;submit&quot;&gt;Search&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;
+            </code></pre>
+          </div>
           <p class="col">
             Vestibulum vitae enim ultricies eros rutrum tincidunt. Sed non sem finibus, elementum libero nec, semper
             nisi. Proin cursus viverra sem id bibendum. Nulla rhoncus pretium elit et malesuada. Curabitur fringilla
