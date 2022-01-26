@@ -132,14 +132,14 @@
             <pre><code class="language-html">
 &lt;!-- type boutons --&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-light px-5 py-3 rounded-0 fs-5 fw-light&quot;
-    onmouseover=&quot;this.style.opacity = '.8'&quot; onmouseout=&quot;this.style.opacity = 'unset'&quot;&gt;Light&lt;/button&gt;
+  onmouseover=&quot;this.style.opacity = '.8'&quot; onmouseout=&quot;this.style.opacity = 'unset'&quot;&gt;Light&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-dark px-5 py-3 rounded-0 fs-5 fw-light&quot;
-    onmouseover=&quot;this.style.opacity = '.8'&quot; onmouseout=&quot;this.style.opacity = 'unset'&quot;&gt;Dark&lt;/button&gt;
+  onmouseover=&quot;this.style.opacity = '.8'&quot; onmouseout=&quot;this.style.opacity = 'unset'&quot;&gt;Dark&lt;/button&gt;
 &lt;!-- type liens --&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn-light px-5 py-3 rounded-0 fs-5 fw-light&quot; onmouseover=&quot;this.style.opacity = '.8'&quot;
-    onmouseout=&quot;this.style.opacity = 'unset'&quot;&gt;Light&lt;/a&gt;
+  onmouseout=&quot;this.style.opacity = 'unset'&quot;&gt;Light&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn-dark px-5 py-3 rounded-0 fs-5 fw-light&quot; onmouseover=&quot;this.style.opacity = '.8'&quot;
-    onmouseout=&quot;this.style.opacity = 'unset'&quot;&gt;Dark&lt;/a&gt;
+  onmouseout=&quot;this.style.opacity = 'unset'&quot;&gt;Dark&lt;/a&gt;
             </code></pre>
           </div>
         </div>
@@ -169,20 +169,49 @@
   &lt;div class=&quot;card-body&quot;&gt;
     &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
     &lt;h6 class=&quot;card-subtitle mb-2 text-muted&quot;&gt;Card subtitle&lt;/h6&gt;
-    &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of
+      the card's content.&lt;/p&gt;
     &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Card link&lt;/a&gt;
     &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Another link&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;
             </code></pre>
           </div>
-          <p class="col">
-            Vestibulum vitae enim ultricies eros rutrum tincidunt. Sed non sem finibus, elementum libero nec, semper
-            nisi. Proin cursus viverra sem id bibendum. Nulla rhoncus pretium elit et malesuada. Curabitur fringilla
-            nisi aliquet, tincidunt ante in, commodo quam. Pellentesque posuere arcu sed leo eleifend scelerisque. In
-            luctus in augue ut egestas. Aliquam ut egestas nibh. Donec nec felis fermentum, porta nibh in, imperdiet
-            ante.
-          </p>
+          <div class="col">
+            <h2 class="my-3 fw-light fs-3">Titre et paragraphe, aligné à gauche</h2>
+            <div class="container-fluid py-3 border">
+              <div class="row">
+                <div class="col-md-7 card border-0">
+                  <div class="card-body">
+                    <h1 class="card-title mb-4 display-5">Lorem ipsum</h1>
+                    <p class="card-text fs-5 fw-light">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non sem quis diam euismod
+                      ullamcorper. Nunc ac nulla non ipsum placerat volutpat ac ut orci. In porttitor sem bibendum
+                      condimentum vestibulum. Vivamus nec risus quis mauris convallis consectetur. Duis et placerat
+                      purus. Donec quis tempor risus sed vitae pretium.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <pre><code class="language-html">
+&lt;div class=&quot;container-fluid&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-7 card border-0&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h1 class=&quot;card-title mb-4 display-5&quot;&gt;Lorem ipsum&lt;/h1&gt;
+          &lt;p class=&quot;card-text fs-5 fw-light&quot;&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non sem quis diam euismod
+            ullamcorper. Nunc ac nulla non ipsum placerat volutpat ac ut orci. In porttitor sem bibendum
+            condimentum vestibulum. Vivamus nec risus quis mauris convallis consectetur. Duis et placerat
+            purus. Donec quis tempor risus sed vitae pretium.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+          </div>
         </div>
       </section>
       <section class="mt-5">
@@ -199,9 +228,9 @@
             <pre><code class="language-html">
 &lt;div class=&quot;container-fluid&quot;&gt;
   &lt;div class=&quot;row&quot;&gt;
-      &lt;p class=&quot;col-md-7 display-3&quot;&gt;
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit integer ornare.
-      &lt;/p&gt;
+    &lt;p class=&quot;col-md-7 display-3&quot;&gt;
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit integer ornare.
+    &lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
             </code></pre>
@@ -279,7 +308,9 @@
 &lt;nav class=&quot;navbar navbar-expand-lg navbar-light bg-light&quot;&gt;
   &lt;div class=&quot;container-fluid&quot;&gt;
     &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;
-    &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarSupportedContent&quot; aria-controls=&quot;navbarSupportedContent&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+    &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot;
+      data-bs-target=&quot;#navbarSupportedContent&quot; aria-controls=&quot;navbarSupportedContent&quot;
+      aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
       &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
     &lt;/button&gt;
     &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarSupportedContent&quot;&gt;
@@ -291,7 +322,8 @@
           &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
         &lt;/li&gt;
         &lt;li class=&quot;nav-item dropdown&quot;&gt;
-          &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;navbarDropdown&quot; role=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+          &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;navbarDropdown&quot; role=&quot;button&quot;
+            data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
             Dropdown
           &lt;/a&gt;
           &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDropdown&quot;&gt;
